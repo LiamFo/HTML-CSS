@@ -1,0 +1,10 @@
+ontwikkelaarsopdrachten antwoorden
+
+1. 0,0,255
+
+2. RGB staat voor Red, Green en Blue. de A staat voor Alpha,
+dat bepaald the transparantie van het object.
+
+4. margin, margin verplaatst het element vanaf de aangegeven kant.
+bijvoorbeeld [margin-left:40px] betekend 40 pixels van links
+(???)
