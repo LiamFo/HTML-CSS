@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.grid-container {
+   margin: 0px;
+   padding: 0px; 
+   display: grid;
+   grid-template-columns: 300px 300px 300px;
+   grid-gap: 0px;
+}
+
+.grid-item {
+    text-align: center;
+    padding: 0px;
+    margin: 0px;
+
+}
+img{
+    padding: 0px;
+    margin: 0px;
+    width: 300px;
+    height: 200px;
+    float:left;
+}
+
+.groote{
+    grid-column-start: 3;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+.big{
+    width: 350px;
+    height: 400px;
+}
+
+img:hover{
+    width: 110%;
+    height: 110%;
+    transition-delay:0.5s;
+}
+
+</style>
+</head>
+<body>
+
+<div class="grid-container">
+  <div class="grid-item"><img src="https://www.sundowner.nl/wp-content/uploads/shutterstock_694592521-1.jpg" alt=""></div>
+  <div class="grid-item"><img src="https://www.spreekbeurtenstartpagina.nl/wp-content/uploads/2021/02/spreekbeurt-over-de-tijger.jpg" alt=""></div>
+  <div class="grid-item"><img src="https://www.sundowner.nl/wp-content/uploads/shutterstock_694592521-1.jpg" alt=""></div>
+  <div class="grid-item"><img src="https://www.spreekbeurtenstartpagina.nl/wp-content/uploads/2021/02/spreekbeurt-over-de-tijger.jpg" alt=""></div>
+  <div class="grid-item"><img src="https://d33b12c77av9bg.cloudfront.net/cache/md_43/safaripark-beekse-bergen-tijger.jpg" alt=""></div>
+  <div class="groote"><img src="https://d33b12c77av9bg.cloudfront.net/cache/md_43/safaripark-beekse-bergen-tijger.jpg" alt=""></div>
+</div>
+
+<img class="big" src="https://www.newscientist.nl/assets/tijger-nigel-Quest.jpg" style="margin-top:-400px;margin-left:900px;">
+
+
+</body>
+</html>
