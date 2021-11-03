@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>what</title>
+</head>
+<style>
+.float-without1 {
+    float: left;
+    width: 100px;
+    height: 50px;
+    margin: 10px;
+    background-size: cover;
+}
+
+.float-without2 {
+    border: 1px solid #6025D8;
+}
+
+.float-with1 {
+    float: left;
+    width: 100px;
+    height: 50px;
+    margin: 10px;
+    background-size: cover;
+}
+
+.float-with2 {
+    border: 1px solid #6025D8;
+    clear: left;
+}
+</style>
+<head>
+	<link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+	<h2>Without clear</h2>
+	<div class="float-without1" style="background-image: url('https://images.fineartamerica.com/images/artworkimages/mediumlarge/2/dark-blue-square-thomas-woolworth.jpg');"></div>
+	<div class="float-without2">Example Text Example Text Example Text</div>
+	<br>
+    <br>
+	<h2>With clear</h2>
+	<div class="float-with1" style="background-image: url('https://images.fineartamerica.com/images/artworkimages/mediumlarge/2/dark-blue-square-thomas-woolworth.jpg');"></div>
+	<div style="margin-bottom: 25px;" class="float-with2">Example Text Example Text Example Text</div>
+</body>
+
+</html>
