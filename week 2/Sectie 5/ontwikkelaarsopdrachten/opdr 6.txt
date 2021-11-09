@@ -1,0 +1,4 @@
+@import roept andere documenten op die niet in het huidige document staat en gebruikt de code die daar in zit
+
+
+je kan ook, inplaats van een externe stylesheet, <styles> gebruiken in hetzelfde document

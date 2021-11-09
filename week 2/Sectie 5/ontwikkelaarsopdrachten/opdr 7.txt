@@ -1,0 +1,1 @@
+ik test door de code te runnen elke keer als ik een aanpassing maak totdat het goed werkt, ik vindt dit de beste manier van testen omdat het de simpeleste manier is.
