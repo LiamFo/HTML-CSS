@@ -1,0 +1,21 @@
+1.  ../image/ betekend dat het plaatje 1 level hoger zit dan het huidige folder
+
+2. links bovenste hoek
+
+3. @Keyframe is een tag dat animaties toevoegt aan elementen
+
+4. From en To want het geeft de start en eind positie aan van het element
+
+5. Pseudo-selector is een keyword dat geselecteerde elementen veranderd
+
+6. :hover - veranderd de element als de muis er over heen hovert
+    :active - veranderd de element als de user het activeert (bijvoorbeeld er op klikken)
+    :focus - veranderd de element als het een focus tag heeft (???)
+
+7.  rood
+
+8. 
+
+9. verandered of tekst verplaatst naar links, rechts of in het midden
+
+10. de activate state van een element is een staat waarbij een element is geactiveert, bijvoorbeeld als je een knop indrukt

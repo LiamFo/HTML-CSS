@@ -1,0 +1,22 @@
+1.  een tag waarmee je elementen kan veranderen gebaseerd op de grootte van het scherm
+
+
+2.  @media screen and (max-width: 600px) {
+  body {
+    background-color: blue;
+  }
+}
+
+dit maakt de achtergrond blauw als het scherm kleiner is dan 600 pixels
+
+
+3. “-webkit-background-color: red;” webkit is een "rendering engine" van html/css die wordt gebruikt in Chrome. dit verandered de achtergrond naar rood
+
+
+4. “-moz-font-size: 2rem”, moz is ook een "rendering engine" maar wordt gebruikt in Safari. dit verandered de letter grootte naar (huidige groote x 2)
+
+
+5. 
+   1. testen kan problemen laten zien
+   2. testen kan de programmeur laten zien hoe het programma er uit ziet
+   3. door te testen kan je zien of de veranderingen die jij heb gemaakt dingen verbeteren
