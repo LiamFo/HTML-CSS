@@ -1,0 +1,16 @@
+1.
+  - importance
+  - specificity
+  - source order
+
+2. 
+  - inline style
+  - elements
+  - classes
+  - id
+
+3. geel
+
+4. 500px
+
+5. 
