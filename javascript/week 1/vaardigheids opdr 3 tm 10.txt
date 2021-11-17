@@ -1,0 +1,15 @@
+3.  string
+
+4. number
+
+5. string
+
+6. boolean
+
+7.  string
+
+8.  string
+
+9. /* dit is commentaar*/
+
+10.  typeof: en instanceof:
