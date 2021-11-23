@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<head>
+<title>what</title>
+</head>
+<style>
+    .flex-container{
+        display:flex;
+        height:500px;
+        width:900px;
+        border:solid 3px;
+    }
+    .flex-child{
+        border:solid green 3px;
+        width: 15px;
+        text-align: center;
+        line-height: 75px;
+        font-size: 20px;
+        flex-basis:3rem; 
+        /*Als ik 300px gebruik zijn alle flex elementen 300px breed, 
+        maar als ik 3rem gebruik dan zijn ze niet 300px breed. 
+        Dit komt omdat rem de waarde vermenigvuld met de bestaande waarde.
+        bijvoorbeeld: 100px = 1rem, 150 = 1.5rem, 250 = 2.5rem, ect*/
+    }
+</style>
+<body>
+    <div class="flex-container">
+        <div class="flex-child">1</div>
+        <div class="flex-child">2</div>
+        <div class="flex-child">3</div>
+        <div class="flex-child">4</div>
+        <div class="flex-child">5</div>
+        <div class="flex-child">6</div>
+        <div class="flex-child">7</div>
+        <div class="flex-child">8</div>
+        <div class="flex-child">9</div>
+        <div class="flex-child" style="width:25px;">10</div>
+    </div>
+</body>
+</head>
