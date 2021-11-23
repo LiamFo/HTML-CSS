@@ -3,19 +3,31 @@
 <title>what</title>
 </head>
 <style>
-    .flex-container{
+    .flex-container{ /*border*/
         display:flex;
         height:500px;
-        max-width:900px;
+        max-width:770px;
         border:solid 3px;
         flex-wrap:wrap;
+        flex-flow:row wrap;
     }
-    .flex-child{
+    .flex-child{ /*squares*/
         border:solid green 3px;
-        width: 150px;
-        height:245px;
+        flex-basis:150px;
         line-height: 75px;
         font-size: 25px;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .test{
+        height:30px;
+        width:100px;
+    }
+
+    .test2{
+        flex-grow:1;
     }
 </style>
 <body>
@@ -23,13 +35,13 @@
         <div class="flex-child" style="background-color: yellow;">1</div>
         <div class="flex-child" style="background-color: red;">2</div>
         <div class="flex-child" style="background-color: blue;">3</div>
-        <div class="flex-child" style="background-color: purple;">4</div>
+        <div class="flex-child test" style="background-color: purple;">4</div>
         <div class="flex-child" style="background-color: yellow;">5</div>
         <div class="flex-child" style="background-color: red;">6</div>
         <div class="flex-child" style="background-color: blue;">7</div>
-        <div class="flex-child" style="background-color: purple;">8</div>
-        <div class="flex-child" style="background-color: yellow;"> 9</div>
-        <div class="flex-child" style="background-color: red;">10</div>
+        <div class="flex-child test" style="background-color: purple;">8</div>
+        <div class="flex-child test2" style="background-color: yellow;"> 9</div>
+        <div class="flex-child test2" style="background-color: red;">10</div>
     </div>
 </body>
 </head>
