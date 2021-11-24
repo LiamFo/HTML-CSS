@@ -1,0 +1,20 @@
+1. een tag waarmee je tekst kan gebruiken
+
+2. met +
+
+3. Jorn is stupid
+
+4. Jorn is briljant
+
+5. Hello Jorn
+
+6."I"am" moet worden verandered naar "I am" of "I'm"
+
+7. (ik begrijp deze vraag niet)
+
+8. if-else, loops, jumps, ect.
+
+9. Met deze structuur kunt u een voorwaarde testen en erop reageeren, 
+afhankelijk van of deze waar of onwaar is.
+
+10. 
