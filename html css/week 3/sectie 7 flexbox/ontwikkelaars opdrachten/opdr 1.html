@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<head>
+<title>test</title>
+</head>
+<style>
+    .flex-container{
+        display:flex;
+        height:600px;
+        max-width:600px;
+        border:solid 5px;
+        border-style:dashed;
+        flex-wrap:wrap;
+        margin-top:50px;
+        background-color:rgb(255,204,255);
+        float:left
+    }
+
+    .flex-child{
+        width: 600px;
+        height:25px;
+        line-height: 75px;
+        font-size: 25px;
+        text-align: center;
+        display: flex;
+        flex-direction:column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .flex-container2{
+        display:flex;
+        height:600px;
+        max-width:600px;
+        border:solid 5px;
+        border-style:dashed;
+        flex-wrap:wrap;
+        margin-top:50px;
+        background-color:rgb(255,204,255);
+        justify-content: flex-end;
+        float:left;
+    }
+
+    .flex-child2{
+        width: 600px;
+        height:25px;
+        line-height: 75px;
+        font-size: 25px;
+        text-align: center;
+        display: flex;
+        flex-direction:column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    .textborder{
+        border:lightblue 2px;
+        border-style:dotted;
+        background-color:rgb(255,128,255);
+        font-family:'Courier';
+        font-size:15px;
+    }
+
+    body{
+        background-color:navajowhite;
+    }
+
+    .text{
+        margin-left:150px;
+    }
+
+</style>
+<body>
+<h1 style="margin-left:530px;font-size:50px;font-family:Courier;">Flexbox</h1>
+
+<div class="flex-container">
+    <div class="flex-child2 textborder" style="background-color:rgb(255,204,255);"><b>Container Properties</b></div>
+    <div class="flex-child textborder"><b>//Creates a Flexbox<br>display:flex;</b></div>
+    
+    <div class="flex-child textborder"><b>//Direction, establishes main-axis</b></div>
+    <div class="flex-child textborder"><b>//To wrap or not to wrap</b></div>
+    <div class="flex-child textborder"><b>//Shorthanded (direction wrap)</b></div>
+    <div class="flex-child textborder"><b>//Alignment main-axis</b></div>
+    <div class="flex-child textborder"><b>//Alignment cross-axis</b></div>
+    <div class="flex-child textborder"><b>//Alignment lines within the container</b></div>
+</div>
+
+<div class="flex-container2">
+    <div class="flex-child2 textborder" style="background-color: rgb(255,204,255);"><b>Item Properties</b></div>
+    <div class="flex-child2 textborder"><b>//Order of the (flex) html-elements</b></div>
+    <div class="flex-child2 textborder"><b>//Ability to grow if necessary</b></div>
+    <div class="flex-child2 textborder"><b>//Ability to shrink if necessary</b></div>
+    <div class="flex-child2 textborder"><b>//Defines default size of the item</b></div>
+    <div class="flex-child2 textborder"><b>//Shorthanded (grow, shrink, basis)</b></div>
+    <div class="flex-child2 textborder"><b>//Override default alignment from align-items</b></div>
+</div>
+</body>
+</head>
