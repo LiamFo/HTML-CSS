@@ -1,98 +1,148 @@
-<!DOCTYPE html>
-<head>
-<title>test</title>
-</head>
-<style>
-    .flex-container{
-        display:flex;
-        height:600px;
-        max-width:600px;
-        border:solid 5px;
-        border-style:dashed;
-        flex-wrap:wrap;
-        margin-top:50px;
-        background-color:rgb(255,204,255);
-        float:left
-    }
+<html>
+    <head>
 
-    .flex-child{
-        width: 600px;
-        height:25px;
-        line-height: 75px;
-        font-size: 25px;
-        text-align: center;
-        display: flex;
-        flex-direction:column;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
-    }
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
 
-    .flex-container2{
-        display:flex;
-        height:600px;
-        max-width:600px;
-        border:solid 5px;
-        border-style:dashed;
-        flex-wrap:wrap;
-        margin-top:50px;
-        background-color:rgb(255,204,255);
-        justify-content: flex-end;
-        float:left;
-    }
+        <title>Flexbox</title>
 
-    .flex-child2{
-        width: 600px;
-        height:25px;
-        line-height: 75px;
-        font-size: 25px;
-        text-align: center;
-        display: flex;
-        flex-direction:column;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
-    }
-    .textborder{
-        border:lightblue 2px;
-        border-style:dotted;
-        background-color:rgb(255,128,255);
-        font-family:'Courier';
-        font-size:15px;
-    }
+        <meta name="description" content="Ouderschapsverlof ROC van Flevoland en Amsterdam">
+        <link rel="icon" type="image/x-icon" href="./family.png">
+        <link rel="stylesheet" href="./main.css">
+        <style>
 
-    body{
-        background-color:navajowhite;
-    }
+            * {
+                padding: 0px;
+                margin: 0px;
+                box-sizing: border-box;
+            }
 
-    .text{
-        margin-left:150px;
-    }
+            html {
+                font-size: 62.5%; /* 10px => 1rem */
+            }
 
-</style>
-<body>
-<h1 style="margin-left:530px;font-size:50px;font-family:Courier;">Flexbox</h1>
+            .flex-container {
+                display: flex;
+                background-color: pink;
+                border: .5rem dashed black;
+            }
 
-<div class="flex-container">
-    <div class="flex-child2 textborder" style="background-color:rgb(255,204,255);"><b>Container Properties</b></div>
-    <div class="flex-child textborder"><b>//Creates a Flexbox<br>display:flex;</b></div>
-    
-    <div class="flex-child textborder"><b>//Direction, establishes main-axis</b></div>
-    <div class="flex-child textborder"><b>//To wrap or not to wrap</b></div>
-    <div class="flex-child textborder"><b>//Shorthanded (direction wrap)</b></div>
-    <div class="flex-child textborder"><b>//Alignment main-axis</b></div>
-    <div class="flex-child textborder"><b>//Alignment cross-axis</b></div>
-    <div class="flex-child textborder"><b>//Alignment lines within the container</b></div>
-</div>
+            .flex-container__sub {
+                flex-basis: 50%;
+            }
+            .flex-container__sub__item {
+                border: .3rem dotted lightblue;
+                font-size: 2rem;
+                font-family: 'Courier New';
+            }
 
-<div class="flex-container2">
-    <div class="flex-child2 textborder" style="background-color: rgb(255,204,255);"><b>Item Properties</b></div>
-    <div class="flex-child2 textborder"><b>//Order of the (flex) html-elements</b></div>
-    <div class="flex-child2 textborder"><b>//Ability to grow if necessary</b></div>
-    <div class="flex-child2 textborder"><b>//Ability to shrink if necessary</b></div>
-    <div class="flex-child2 textborder"><b>//Defines default size of the item</b></div>
-    <div class="flex-child2 textborder"><b>//Shorthanded (grow, shrink, basis)</b></div>
-    <div class="flex-child2 textborder"><b>//Override default alignment from align-items</b></div>
-</div>
-</body>
-</head>
+            .flex-container__sub__item--upper, .flex-container__sub__item--lower, .title {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                padding: 1rem .5rem;
+            }
+
+            .flex-container__sub__item--upper {
+                background-color: hotpink;
+                flex-basis: 100%;
+                font-weight: bold;
+            }
+
+        </style>
+    </head>
+    <body>
+
+        <div class="flex-container">
+            <div class="flex-container__sub">
+                <div class="flex-container__sub__item title">Container properties</div>
+                <div class="flex-container__sub__item">
+                    <div class="flex-container__sub__item--upper">//Creates a flexbox</div>
+                    <div class="flex-container__sub__item--lower">display: flex</div>
+                </div>
+
+                <div class="flex-container__sub__item">
+                    <div class="flex-container__sub__item--upper">//Direction</div>
+                    <div class="flex-container__sub__item--lower">display: flex</div>
+                </div>
+
+                <div class="flex-container__sub__item">
+                    <div class="flex-container__sub__item--upper">//Creates a flexbox</div>
+                    <div class="flex-container__sub__item--lower">display: flex</div>
+
+                </div>
+
+                <div class="flex-container__sub__item">
+                    <div class="flex-container__sub__item--upper">//Creates a flexbox</div>
+                    <div class="flex-container__sub__item--lower">display: flex</div>
+                </div>
+
+                <div class="flex-container__sub__item">
+                    <div class="flex-container__sub__item--upper">//Creates a flexbox</div>
+                    <div class="flex-container__sub__item--lower">display: flex</div>
+                </div>
+
+                <div class="flex-container__sub__item">
+                    <div class="flex-container__sub__item--upper">//Creates a flexbox</div>
+                    <div class="flex-container__sub__item--lower">display: flex</div>
+                </div>
+
+                <div class="flex-container__sub__item">
+                    <div class="flex-container__sub__item--upper">//Creates a flexbox</div>
+                    <div class="flex-container__sub__item--lower">display: flex</div>
+                </div>
+
+                <div class="flex-container__sub__item">
+                    <div class="flex-container__sub__item--upper">//Creates a flexbox</div>
+                    <div class="flex-container__sub__item--lower">display: flex</div>
+                </div>
+
+            </div>
+
+            <div class="flex-container__sub">
+                <div class="flex-container__sub__item title">Container properties</div>
+                <div class="flex-container__sub__item">
+                    <div class="flex-container__sub__item--upper">//Creates a flexbox</div>
+                    <div class="flex-container__sub__item--lower">display: flex</div>
+                </div>
+
+                <div class="flex-container__sub__item">
+                    <div class="flex-container__sub__item--upper">//Direction</div>
+                    <div class="flex-container__sub__item--lower">display: flex</div>
+                </div>
+
+                <div class="flex-container__sub__item">
+                    <div class="flex-container__sub__item--upper">//Creates a flexbox</div>
+                    <div class="flex-container__sub__item--lower">display: flex</div>
+                </div>
+
+                <div class="flex-container__sub__item">
+                    <div class="flex-container__sub__item--upper">//Creates a flexbox</div>
+                    <div class="flex-container__sub__item--lower">display: flex</div>
+                </div>
+
+                <div class="flex-container__sub__item">
+                    <div class="flex-container__sub__item--upper">//Creates a flexbox</div>
+                    <div class="flex-container__sub__item--lower">display: flex</div>
+                </div>
+
+                <div class="flex-container__sub__item">
+                    <div class="flex-container__sub__item--upper">//Creates a flexbox</div>
+                    <div class="flex-container__sub__item--lower">display: flex</div>
+                </div>
+
+                <div class="flex-container__sub__item">
+                    <div class="flex-container__sub__item--upper">//Creates a flexbox</div>
+                    <div class="flex-container__sub__item--lower">display: flex</div>
+                </div>
+
+                <div class="flex-container__sub__item">
+                    <div class="flex-container__sub__item--upper">//Creates a flexbox</div>
+                    <div class="flex-container__sub__item--lower">display: flex</div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
