@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<head>
+<title>test</title>
+</head>
+<style>
+    .flex-container-outer{
+        display:flex;
+        height:50px;
+        width:90%;
+        border:solid 0px;
+        border-color: black;
+        flex-wrap:row nowrap;
+        margin-top:50px;
+        background-color:plum;
+    }
+    .flex-container-inner{
+        border:solid black 2px;
+        width:100%;
+        padding:5px;
+        line-height: 20px;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .test2{
+        margin-top:20px;
+        border-color: transparent;
+    }
+    img{
+        margin-left:40px;
+        margin-top:20px;
+    }
+
+    @media screen and (max-width: 1203px) {
+        .flex-container-outer{
+            flex-wrap:wrap;
+            width:317px;
+            height:150px;
+        }
+        .flex-container-inner{
+            flex-wrap:wrap;
+            padding:0px;
+            margin:2px;
+            width:150px;
+        }
+    }
+
+    @media screen and (max-width: 815px) {
+        .flex-container-outer{
+            flex-wrap:nowrap;
+            flex-direction: column;
+            height:110px;
+            width:160px;
+        }
+    }  
+</style>
+<body style="background-color: lightgrey;">
+
+    <div class="flex-container-outer">
+        <div class="flex-container-inner">
+            <div class="flex-child test">Home</div>
+            </div>
+
+            <div class="flex-container-inner">
+                <div class="flex-child ">Onze diensten</div>
+                </div>
+
+            <div class="flex-container-inner">
+                <div class="flex-child">Ons team</div>
+                </div>
+
+            <div class="flex-container-inner">
+                <div class="flex-child">Contact</div>
+                </div>
+    </div>
+    <img src="https://d33b12c77av9bg.cloudfront.net/originals/tijgerweken-beekse-bergen-header.jpg"  width="350px;" height="300px;">
+    <img src="https://d33b12c77av9bg.cloudfront.net/originals/tijgerweken-beekse-bergen-header.jpg"  width="350px;" height="300px;">
+    <img src="https://d33b12c77av9bg.cloudfront.net/originals/tijgerweken-beekse-bergen-header.jpg"  width="350px;" height="300px;">
+
+    <img src="https://d33b12c77av9bg.cloudfront.net/originals/tijgerweken-beekse-bergen-header.jpg"  width="350px;" height="300px;">
+    <img src="https://d33b12c77av9bg.cloudfront.net/originals/tijgerweken-beekse-bergen-header.jpg"  width="350px;" height="300px;">
+    <img src="https://d33b12c77av9bg.cloudfront.net/originals/tijgerweken-beekse-bergen-header.jpg"  width="350px;" height="300px;">
+
+    <div class="flex-container-outer test2">
+        <div class="flex-container-inner">
+            <div class="flex-child test">ROC-DEV</div>
+            </div>
+
+            <div class="flex-container-inner">
+                <div class="flex-child ">060002000</div>
+                </div>
+
+            <div class="flex-container-inner">
+                <div class="flex-child">roc-dev@roc-dev.com</div>
+                </div>
+
+            <div class="flex-container-inner">
+                <div class="flex-child">SVF 1, Almere</div>
+                </div>
+
+            <div class="flex-container-inner">
+                <div class="flex-child">KVK 6260090</div>
+                </div>
+
+            <div class="flex-container-inner">
+                 <div class="flex-child">B019022323214</div>
+                </div>
+    </div>
+
+</body>
+</head>

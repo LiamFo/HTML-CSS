@@ -29,11 +29,11 @@
             }
 
             .flex-container__sub {
-                flex-basis: 50%;
+                flex-basis: 45%;
             }
             .flex-container__sub__item {
                 border: .3rem dotted lightblue;
-                font-size: 2rem;
+                font-size: 1.5rem;
                 font-family: 'Courier New';
             }
 
@@ -64,73 +64,71 @@
                 </div>
 
                 <div class="flex-container__sub__item">
-                    <div class="flex-container__sub__item--upper">//Direction</div>
-                    <div class="flex-container__sub__item--lower">display: flex</div>
+                    <div class="flex-container__sub__item--upper">//Direction, establishes main-axis</div>
+                    <div class="flex-container__sub__item--lower">flex-direction: row || row-reverse || column || column-reverse</div>
                 </div>
 
                 <div class="flex-container__sub__item">
-                    <div class="flex-container__sub__item--upper">//Creates a flexbox</div>
-                    <div class="flex-container__sub__item--lower">display: flex</div>
+                    <div class="flex-container__sub__item--upper">//To wrap or not to wrap</div>
+                    <div class="flex-container__sub__item--lower">flex-wrap: wrap || nowrap || wrap-reverse</div>
 
                 </div>
 
                 <div class="flex-container__sub__item">
-                    <div class="flex-container__sub__item--upper">//Creates a flexbox</div>
-                    <div class="flex-container__sub__item--lower">display: flex</div>
+                    <div class="flex-container__sub__item--upper">//Shorthanded (direction wrap)</div>
+                    <div class="flex-container__sub__item--lower">flex-flow: flex-direction flex-wrap</div>
                 </div>
 
                 <div class="flex-container__sub__item">
-                    <div class="flex-container__sub__item--upper">//Creates a flexbox</div>
-                    <div class="flex-container__sub__item--lower">display: flex</div>
+                    <div class="flex-container__sub__item--upper">//Alignment main axis</div>
+                    <div class="flex-container__sub__item--lower">justify-content: flex-start || flex-end || center || space-between || space-around || space-evenly</div>
                 </div>
 
                 <div class="flex-container__sub__item">
-                    <div class="flex-container__sub__item--upper">//Creates a flexbox</div>
-                    <div class="flex-container__sub__item--lower">display: flex</div>
+                    <div class="flex-container__sub__item--upper">//Alignment cross axis</div>
+                    <div class="flex-container__sub__item--lower">align-items: stretch || flex-start || flex-end || centerr || baseline</div>
                 </div>
 
                 <div class="flex-container__sub__item">
-                    <div class="flex-container__sub__item--upper">//Creates a flexbox</div>
-                    <div class="flex-container__sub__item--lower">display: flex</div>
+                    <div class="flex-container__sub__item--upper">//Align items within the container</div>
+                    <div class="flex-container__sub__item--lower">align-content: normal || flex-start || flex-end || center || space-between || space-evenly || space-around || stretch</div>
                 </div>
 
                 <div class="flex-container__sub__item">
-                    <div class="flex-container__sub__item--upper">//Creates a flexbox</div>
-                    <div class="flex-container__sub__item--lower">display: flex</div>
+                    <div class="flex-container__sub__item--upper"></div>
+                    <div class="flex-container__sub__item--lower"></div>
                 </div>
-
-            </div>
 
             <div class="flex-container__sub">
-                <div class="flex-container__sub__item title">Container properties</div>
+                <div class="flex-container__sub__item title">item properties</div>
                 <div class="flex-container__sub__item">
-                    <div class="flex-container__sub__item--upper">//Creates a flexbox</div>
-                    <div class="flex-container__sub__item--lower">display: flex</div>
+                    <div class="flex-container__sub__item--upper">//Order of the (flex) html-elements</div>
+                    <div class="flex-container__sub__item--lower">order: integer (default: 0)</div>
                 </div>
 
                 <div class="flex-container__sub__item">
-                    <div class="flex-container__sub__item--upper">//Direction</div>
-                    <div class="flex-container__sub__item--lower">display: flex</div>
+                    <div class="flex-container__sub__item--upper">//Ability to grow if necessary</div>
+                    <div class="flex-container__sub__item--lower">Flex:-grow: integer (default: 0)</div>
                 </div>
 
                 <div class="flex-container__sub__item">
-                    <div class="flex-container__sub__item--upper">//Creates a flexbox</div>
-                    <div class="flex-container__sub__item--lower">display: flex</div>
+                    <div class="flex-container__sub__item--upper">//Ability to shrink if necesarry</div>
+                    <div class="flex-container__sub__item--lower">flex-shrink: positive integer (default: 1)</div>
                 </div>
 
                 <div class="flex-container__sub__item">
-                    <div class="flex-container__sub__item--upper">//Creates a flexbox</div>
-                    <div class="flex-container__sub__item--lower">display: flex</div>
+                    <div class="flex-container__sub__item--upper">//Defines default size of the items</div>
+                    <div class="flex-container__sub__item--lower">flex-basis: length || keyword (default: auto)</div>
                 </div>
 
                 <div class="flex-container__sub__item">
-                    <div class="flex-container__sub__item--upper">//Creates a flexbox</div>
-                    <div class="flex-container__sub__item--lower">display: flex</div>
+                    <div class="flex-container__sub__item--upper">//Shorthanded (grow shrink basis)</div>
+                    <div class="flex-container__sub__item--lower">flex: flex-grow flex-shrink flex-bass (default: 0 1 auto)</div>
                 </div>
 
                 <div class="flex-container__sub__item">
-                    <div class="flex-container__sub__item--upper">//Creates a flexbox</div>
-                    <div class="flex-container__sub__item--lower">display: flex</div>
+                    <div class="flex-container__sub__item--upper">//Override default alignment form align-items</div>
+                    <div class="flex-container__sub__item--lower">algin-self: auto || flex-start || flex-end || center || baseline || stretch</div>
                 </div>
 
                 <div class="flex-container__sub__item">
