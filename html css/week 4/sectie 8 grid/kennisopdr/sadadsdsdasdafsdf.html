@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.container {
+    display: grid;
+    
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 100px 200px;
+  
+    grid-template-areas:
+          "head head2 . side"
+          "main main2 . side"
+          "footer footer footer footer";
+  }
+  </style>
+  </head>
+  <body>
+      <div class="container"></div>
+      <div class="container"></div>
+      <div class="container"></div>
+  </body>
+</head>
