@@ -1,0 +1,254 @@
+<html>
+    <head>
+
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+
+        <title>Flexbox</title>
+
+        <meta name="description" content="Ouderschapsverlof ROC van Flevoland en Amsterdam">
+        <link rel="icon" type="image/x-icon" href="./family.png">
+        <link rel="stylesheet" href="./main.css">
+        <style>
+
+            * {
+                padding: 0px;
+                margin: 0px;
+                box-sizing: border-box;
+            }
+
+            html {
+                font-size: 35.5%; /* 10px => 1rem */
+            }
+
+            .flex-container {
+                display: flex;
+                background-color: pink;
+                border: .5rem dashed black;
+            }
+
+            .flex-container__sub {
+                flex-basis: 35%;
+                float:inline-end;
+            }
+            .flex-container__sub__item {
+                border: .2rem dotted lightblue;
+                font-size: 1.5rem;
+                font-family: 'Courier New';
+            }
+
+            .flex-container__sub__item--upper, .flex-container__sub__item--lower, .title {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                padding: .7rem .3rem;
+            }
+
+            .flex-container__sub__item--upper {
+                background-color: hotpink;
+                flex-basis: 100%;
+                font-weight: bold;
+            }
+
+        </style>
+    </head>
+    <body>
+
+        <div class="flex-container">
+            <div class="flex-container__sub">
+                <div class="flex-container__sub__item title">Container properties</div>
+                <div class="flex-container__sub__item">
+                    <div class="flex-container__sub__item--upper">//Creates a grid</div>
+                    <div class="flex-container__sub__item--lower">display: grid || inline-grid</div>
+                </div>
+
+                <div class="flex-container__sub__item">
+                    <div class="flex-container__sub__item--upper">//Creates grid columns</div>
+                    <div class="flex-container__sub__item--lower">Grid-template-columns: length || percentage || fr || line-name</div>
+                </div>
+
+                <div class="flex-container__sub__item">
+                    <div class="flex-container__sub__item--upper">//Creates grid rows</div>
+                    <div class="flex-container__sub__item--lower">Grid-template-rows: length || percentage || fr || line-name</div>
+                </div>
+
+                <div class="flex-container__sub__item">
+                    <div class="flex-container__sub__item--upper">//Creates a grid with specified areas</div>
+                    <div class="flex-container__sub__item--lower">grid-template-area: grid-area-name || none || .</div>
+                </div>
+
+                <div class="flex-container__sub__item">
+                    <div class="flex-container__sub__item--upper">//Creates rows, columns and areas in a single declaration</div>
+                    <div class="flex-container__sub__item--lower">grid-template: none (initial value) || grid-template-rows / grid-template-columns</div>
+                </div>
+
+                <div class="flex-container__sub__item">
+                    <div class="flex-container__sub__item--upper">//Creates spaces between grid-items on the row axis</div>
+                    <div class="flex-container__sub__item--lower">row-gap (grid-row-gap): length</div>
+                </div>
+
+                <div class="flex-container__sub__item">
+                    <div class="flex-container__sub__item--upper">//Creates spaces between grid-items on the column axis</div>
+                    <div class="flex-container__sub__item--lower">column-gap (grid-column-gap): length</div>
+                </div>
+
+                <div class="flex-container__sub__item">
+                    <div class="flex-container__sub__item--upper">//Creates spaces between grid-items on the row and column axis</div>
+                    <div class="flex-container__sub__item--lower">gap (grid-gap): grid-row-gap grid-column-rap</div>
+                </div>
+
+                <div class="flex-container__sub__item">
+                    <div class="flex-container__sub__item--upper">//Align grid items along the inline/row axis</div>
+                    <div class="flex-container__sub__item--lower">Justify-items: start || end || center || stretch</div>
+                </div>
+
+                <div class="flex-container__sub__item">
+                    <div class="flex-container__sub__item--upper">//Align grid items along the block/column axis</div>
+                    <div class="flex-container__sub__item--lower">Align-items: start || end || center || stretch</div>
+                </div>
+
+                <div class="flex-container__sub__item">
+                    <div class="flex-container__sub__item--upper">//Align grid items along the inline and block axis (shorthanded)</div>
+                    <div class="flex-container__sub__item--lower">place-items: align-items || Justify-items</div>
+                </div>
+
+                <div class="flex-container__sub__item">
+                    <div class="flex-container__sub__item--upper">//Align the whole grid (container) along the inline/row axis</div>
+                    <div class="flex-container__sub__item--lower">Justify-items: start || end || center || stretch || space-between || space-around || space-evenly</div>
+                </div>
+
+                <div class="flex-container__sub__item">
+                    <div class="flex-container__sub__item--upper">//Align the whole grid (container) along the block/column axis</div>
+                    <div class="flex-container__sub__item--lower">Align-items: start || end || center || stretch | space-around || space-between || space-evenly</div>
+                </div>
+
+                <div class="flex-container__sub__item">
+                    <div class="flex-container__sub__item--upper">//Align the whole grid (container) along the inline and block axis 9shorthanded)</div>
+                    <div class="flex-container__sub__item--lower">place-content: align-content || justify-content</div>
+                </div>
+
+                <div class="flex-container__sub__item">
+                    <div class="flex-container__sub__item--upper">//specifies the size of any auto-genrated grid row</div>
+                    <div class="flex-container__sub__item--lower">grid-auto-rows: size (length) || percentage || fr</div>
+                </div>
+
+                <div class="flex-container__sub__item">
+                    <div class="flex-container__sub__item--upper">/Specifies the size of any auto-genrated grid column</div>
+                    <div class="flex-container__sub__item--lower">grid-auto-column: size( (length) || percentage || fr</div>
+                </div>
+
+                <div class="flex-container__sub__item">
+                    <div class="flex-container__sub__item--upper">//Sets the algorithm that places the grid-items</div>
+                    <div class="flex-container__sub__item--lower">grid-auto-flow: row || column || dense</div>
+                </div>
+
+                <div class="flex-container__sub__item">
+                    <div class="flex-container__sub__item--upper">//Shorthand for almost every property</div>
+                    <div class="flex-container__sub__item--lower">grid: grid-template rows || grid-template-columns || grid-template-areas || grid-auto-rows || grid-auto-columns || grid-auto-flow</div>
+                </div>
+
+                <div class="flex-container__sub__item">
+                    <div class="flex-container__sub__item--upper"></div>
+                    <div class="flex-container__sub__item--lower"></div>
+                </div>
+
+
+
+
+            <div class="flex-container__sub">
+                <div class="flex-container__sub__item title">item properties</div>
+                <div class="flex-container__sub__item">
+                    <div class="flex-container__sub__item--upper">//Determinens the column start of an item within the grid</div>
+                    <div class="flex-container__sub__item--lower">grid-column-start: line || span (number || name) || auto</div>
+                </div>
+
+                <div class="flex-container__sub__item">
+                    <div class="flex-container__sub__item--upper">//Determinens the row start of an item within the grid</div>
+                    <div class="flex-container__sub__item--lower">grid-column-start: line || span (number || name) || auto</div>
+                </div>
+
+                <div class="flex-container__sub__item">
+                    <div class="flex-container__sub__item--upper">//Determinens the column end of an item within the grid</div>
+                    <div class="flex-container__sub__item--lower">grid-column-start: line || span (number || name) || auto</div>
+                </div>
+
+                <div class="flex-container__sub__item">
+                    <div class="flex-container__sub__item--upper">//Determinens the row end of an item within the grid</div>
+                    <div class="flex-container__sub__item--lower">grid-column-start: line || span (number || name) || auto</div>
+                </div>
+
+                <div class="flex-container__sub__item">
+                    <div class="flex-container__sub__item--upper">//Shorthand for column start and end</div>
+                    <div class="flex-container__sub__item--lower">grid-column: grid-column-start || grid-column-end</div>
+                </div>
+
+                <div class="flex-container__sub__item">
+                    <div class="flex-container__sub__item--upper">//Shorthand for row start and end</div>
+                    <div class="flex-container__sub__item--lower">grid-row: grid-row-start || grid-row-end</div>
+                </div>
+
+                <div class="flex-container__sub__item">
+                    <div class="flex-container__sub__item--upper">//Give a grid-area-name to a grid item</div>
+                    <div class="flex-container__sub__item--lower">grid-area: name || row-start || column-start || row-end || column-end</div>
+                </div>
+
+                <div class="flex-container__sub__item">
+                    <div class="flex-container__sub__item--upper">//Aligns grid items inside a cell along the inline / row axis</div>
+                    <div class="flex-container__sub__item--lower">justify-self: start || end || center || stretch</div>
+                </div>
+
+                <div class="flex-container__sub__item">
+                    <div class="flex-container__sub__item--upper">//Aligns grid items inside a cell along the block / column axis</div>
+                    <div class="flex-container__sub__item--lower">Align-self: start || end || center || stretch</div>
+                </div>
+
+                <div class="flex-container__sub__item">
+                    <div class="flex-container__sub__item--upper">//Align a grid item with a cell along the row/inline and block/column axis</div>
+                    <div class="flex-container__sub__item--lower">place-self: align-self || justify-self</div>
+                </div>
+
+                <div class="flex-container__sub__item">
+                    <div class="flex-container__sub__item--upper"></div>
+                    <div class="flex-container__sub__item--lower"></div>
+                </div>
+
+                <div class="flex-container__sub__item">
+                    <div class="flex-container__sub__item--upper"></div>
+                    <div class="flex-container__sub__item--lower"></div>
+                </div>
+
+                <div class="flex-container__sub__item">
+                    <div class="flex-container__sub__item--upper"></div>
+                    <div class="flex-container__sub__item--lower"></div>
+                </div>
+
+                <div class="flex-container__sub__item">
+                    <div class="flex-container__sub__item--upper"></div>
+                    <div class="flex-container__sub__item--lower"></div>
+                </div>
+
+                <div class="flex-container__sub__item">
+                    <div class="flex-container__sub__item--upper"></div>
+                    <div class="flex-container__sub__item--lower"></div>
+                </div>
+
+                <div class="flex-container__sub__item">
+                    <div class="flex-container__sub__item--upper"></div>
+                    <div class="flex-container__sub__item--lower"></div>
+                </div>
+
+                <div class="flex-container__sub__item">
+                    <div class="flex-container__sub__item--upper"></div>
+                    <div class="flex-container__sub__item--lower"></div>
+                </div>
+
+                <div class="flex-container__sub__item">
+                    <div class="flex-container__sub__item--upper"></div>
+                    <div class="flex-container__sub__item--lower"></div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

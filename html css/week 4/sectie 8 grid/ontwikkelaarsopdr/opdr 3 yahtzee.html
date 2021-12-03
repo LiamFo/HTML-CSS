@@ -1,0 +1,282 @@
+<html>
+    <head>
+        <style>
+            .grid-container {
+                min-height: 80vh;
+                display: grid;
+                grid-template-columns:100px 75px 50px 50px 50px 50px;
+                grid-template-rows:25px 25px 25px 25px 25px 25px 25px 25px 25px 25px 25px 25px 25px 25px 25px 25px 25px 25px;
+                text-align:left;
+                font-size:10px;
+                font-weight: bold;
+            }
+            .grid-item{
+                border:solid black 1px;
+            }
+            .a { /*category*/
+                grid-column: 1 / 2;
+                grid-row: 1 / 2;
+            }
+
+            .b {/*score*/
+                grid-column: 2 / 3;
+                grid-row: 1 / 2;
+            }
+
+            .c {/*aces*/
+                grid-column: 1 / 2;
+                grid-row: 2 / 3;
+            }
+
+            .d {/*twos*/
+                grid-column: 1 / 2;
+                grid-row: 3 / 4;
+            }
+            .e {/*threes*/
+                grid-column: 1 / 2;
+                grid-row: 4 / 5;
+            }
+            .f {/*fours*/
+                grid-column: 1 / 2;
+                grid-row: 5 / 6;
+            }
+
+            .g {/*fives*/
+                grid-column: 1 / 2;
+                grid-row: 6 / 7;
+            }
+
+            .h {/*sixes*/
+                grid-column: 1 / 2;
+                grid-row: 7 / 8;
+            }
+            .i{/*upper total*/
+                grid-column:1 / 2;
+                grid-row:8 / 9;
+            }
+            .j{/*63 or more*/
+                grid-column:1 / 2;
+                grid-row:9 / 10;
+            }
+            .k{/*3 kind*/
+                grid-column:1 / 2;
+                grid-row: 10 / 11;
+            }
+            .l{/*4 kind*/
+                grid-column:1 / 2;
+                grid-row: 11 / 12;
+            }
+            .m{/*chance*/
+                grid-column:1 / 2;
+                grid-row: 12 / 13;
+            }
+            .n{
+                grid-column:1 / 2;
+                grid-row: 13 / 14;
+            }
+            .o{
+                grid-column:1 / 2;
+                grid-row: 14 / 15;
+            }
+            .p{
+                grid-column:1 / 2;
+                grid-row: 15 / 16;
+            }
+            .q{
+                grid-column:1 / 2;
+                grid-row: 16 / 17;
+            }
+            .r{
+                grid-column:1 / 2;
+                grid-row: 17 / 18;
+            }
+            .s{
+                grid-column:1 / 2;
+                grid-row: 18 / 19;
+            }
+
+
+            .t{
+                grid-column:2 / 3;
+                grid-row: 2 / 3;
+            }
+            .u{
+                grid-column:2/3;
+                grid-row:3/4;
+            }
+            .v{
+                grid-column:2 / 3;
+                grid-row: 4 / 5;
+            }
+            .w{
+                grid-column:2 / 3;
+                grid-row: 5 / 6;
+            }
+            .x{
+                grid-column:2 / 3;
+                grid-row: 6 / 7;
+            }
+            .y{
+                grid-column:2 / 3;
+                grid-row: 7 / 8;
+            }
+            .z{
+                grid-column:2 / 3;
+                grid-row: 8 / 9;
+            }
+            .a1{
+                grid-column:2 / 3;
+                grid-row: 9 / 10;
+            }
+            .a2{
+                grid-column:2 / 3;
+                grid-row: 10 / 11;
+            }
+            .a3{
+                grid-column:2 / 3;
+                grid-row: 11 / 12;
+            }
+            .a4{
+                grid-column:2 / 3;
+                grid-row: 12 / 13;
+            }
+            .a5{
+                grid-column:2 / 3;
+                grid-row: 13 / 14;
+            }
+            .a6{
+                grid-column:2 / 3;
+                grid-row: 14 / 15;
+            }
+            .a7{
+                grid-column:2 / 3;
+                grid-row: 15 / 16;
+            }
+            .a8{
+                grid-column:2 / 3;
+                grid-row: 16 / 17;
+            }
+            .a9{
+                grid-column:2 / 3;
+                grid-row:17 / 18;
+            }
+            .a10{
+                grid-column:2/3;
+                grid-row:18/19;
+            }
+        </style>
+    </head>
+    <body class="grid-container">
+        <div class="grid-item a">Category</div>
+        <div class="grid-item b">Score</div>
+        <div class="grid-item c">Aces</div>
+        <div class="grid-item d">Twos</div>
+        <div class="grid-item e">Threes</div>
+        <div class="grid-item f">Fours</div>
+        <div class="grid-item g">Fives</div>
+        <div class="grid-item h">Sixes</div>
+        <div class="grid-item i">Upper Total</div>
+        <div class="grid-item j">63 or more bonus</div>
+        <div class="grid-item k">3 of a kind</div>
+        <div class="grid-item l">3 of a kind</div>
+        <div class="grid-item m">Chance</div>
+        <div class="grid-item n">Full house</div>
+        <div class="grid-item o">Small Straight</div>
+        <div class="grid-item p">Large Straight</div>
+        <div class="grid-item q">Yahtzee</div>
+        <div class="grid-item r">Yathzee Bonus</div>
+        <div class="grid-item s">Total</div>
+        <div class="grid-item t">Score 1's</div>
+        <div class="grid-item u">Score 2's</div>
+        <div class="grid-item v">Score 3's</div>
+        <div class="grid-item w">Score 4's</div>
+        <div class="grid-item x">Score 5's</div>
+        <div class="grid-item y">Score 6's</div>
+        <div class="grid-item z"></div>
+
+        <div class="grid-item a1">35</div>
+        <div class="grid-item a2">All faces if fits</div>
+        <div class="grid-item a3">All faces if fits</div>
+        <div class="grid-item a4">All faces</div>
+        <div class="grid-item a5">25</div>
+        <div class="grid-item a6">30</div>
+        <div class="grid-item a7">40</div>
+        <div class="grid-item a8">50</div>
+        <div class="grid-item a9">100 each</div>
+        <div class="grid-item a10"></div>
+
+        <div class="grid-item empty1"></div>
+        <div class="grid-item empty2"></div>
+        <div class="grid-item empty3"></div>
+        <div class="grid-item empty4"></div>
+        <div class="grid-item empty5"></div>
+        <div class="grid-item empty6"></div>
+        <div class="grid-item empty7"></div>
+        <div class="grid-item empty8"></div>
+        <div class="grid-item empty9"></div>
+        <div class="grid-item empty10"></div>
+        <div class="grid-item empty11"></div>
+        <div class="grid-item empty12"></div>
+        <div class="grid-item empty13"></div>
+        <div class="grid-item empty14"></div>
+        <div class="grid-item empty15"></div>
+        <div class="grid-item empty16"></div>
+        <div class="grid-item empty17"></div>
+        <div class="grid-item empty18"></div>
+        <div class="grid-item empty19"></div>
+        <div class="grid-item empty21"></div>
+        <div class="grid-item empty22"></div>
+        <div class="grid-item empty23"></div>
+        <div class="grid-item empty24"></div>
+        <div class="grid-item empty25"></div>
+        <div class="grid-item empty26"></div>
+        <div class="grid-item empty27"></div>
+        <div class="grid-item empty28"></div>
+        <div class="grid-item empty29"></div>
+        <div class="grid-item empty30"></div>
+        <div class="grid-item empty31"></div>
+        <div class="grid-item empty32"></div>
+        <div class="grid-item empty33"></div>
+        <div class="grid-item empty34"></div>
+        <div class="grid-item empty35"></div>
+        <div class="grid-item empty36"></div>
+        <div class="grid-item empty37"></div>
+
+        <div class="grid-item aempty1"></div>
+        <div class="grid-item aempty2"></div>
+        <div class="grid-item aempty3"></div>
+        <div class="grid-item aempty4"></div>
+        <div class="grid-item aempty5"></div>
+        <div class="grid-item aempty6"></div>
+        <div class="grid-item aempty7"></div>
+        <div class="grid-item aempty8"></div>
+        <div class="grid-item aempty9"></div>
+        <div class="grid-item aempty10"></div>
+        <div class="grid-item aempty11"></div>
+        <div class="grid-item aempty12"></div>
+        <div class="grid-item aempty13"></div>
+        <div class="grid-item aempty14"></div>
+        <div class="grid-item aempty15"></div>
+        <div class="grid-item aempty16"></div>
+        <div class="grid-item aempty17"></div>
+        <div class="grid-item aempty18"></div>
+        <div class="grid-item aempty19"></div>
+        <div class="grid-item aempty21"></div>
+        <div class="grid-item aempty22"></div>
+        <div class="grid-item aempty23"></div>
+        <div class="grid-item aempty24"></div>
+        <div class="grid-item aempty25"></div>
+        <div class="grid-item aempty26"></div>
+        <div class="grid-item aempty27"></div>
+        <div class="grid-item aempty28"></div>
+        <div class="grid-item aempty29"></div>
+        <div class="grid-item aempty30"></div>
+        <div class="grid-item aempty31"></div>
+        <div class="grid-item aempty32"></div>
+        <div class="grid-item aempty33"></div>
+        <div class="grid-item aempty34"></div>
+        <div class="grid-item aempty35"></div>
+        <div class="grid-item aempty36"></div>
+        <div class="grid-item aempty37"></div>
+    </body>
+</html>
