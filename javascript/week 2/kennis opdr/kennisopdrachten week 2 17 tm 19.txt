@@ -16,5 +16,3 @@
 
 9. Met deze structuur kunt u een voorwaarde testen en erop reageeren, 
 afhankelijk van of deze waar of onwaar is.
-
-10. 

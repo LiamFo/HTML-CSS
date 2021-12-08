@@ -1,0 +1,84 @@
+1. coercion is implict while conversion can be implict and explict
+
+2. coercion
+
+3. conversion
+
+4. 43
+
+5. -12
+
+6. 13
+
+7. 13
+
+8. 43
+
+9. 22
+
+10. 5512
+
+11. falsy value is een waarde dat fals wordt gezien in een boolean.
+
+12. falsy value is een waarde dat waar wordt gezien in een boolean.
+
+13. Niet Waar!
+
+14. Niet Waar!
+
+15. Niet Waar!
+
+16. Waar!
+
+17. Niet Waar!
+
+18. Waar!
+
+19. Niet Waar!
+
+20. Niet Waar!
+
+21. Waar!
+
+22. == wordt gebruikt om twee variables te vergelijken maar het negeert het datatype van de variable. 
+=== negeert het datatype niet.
+
+23. Ok...
+
+24. Het begin van het begin
+
+25. Het begin van het begin - nog steeds
+
+26. ja
+
+27. ja
+
+28. nee
+
+29. ja
+
+30. nee
+
+31. de ! heet een Bang in javascript. als je het voor een boolean zet dan w
+ordt het omgekeerde waarde wordt terug gestuurd
+bijvoorbeeld:
+const a = 3;
+const b = -2;
+
+console.log(!(a > 0 || b > 0));
+
+(console: false)
+
+32. true
+
+33. false;
+
+34. false
+
+35. You do something you like, probably in the public sector!
+
+36. You do something you like, probably in the public sector!
+
+37. I want JUNKFOOD!
+
+38. het checkt voor junkfood twee keer en werkt nog steeds niet

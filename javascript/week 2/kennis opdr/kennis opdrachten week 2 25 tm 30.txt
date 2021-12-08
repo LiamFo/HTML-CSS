@@ -1,0 +1,50 @@
+1. Een switch statement is een deel van javascript's "Conditional Statements" dat wordt gebruikt om
+verschillende acties uit te voeren bij verschillende omstandigheden.
+
+2. Hard Coded Values zijn waardes die vast zijn, je kan het niet direct veranderen.
+
+3.Break stopt de uitvoering van meer uitvoering van code en/of case-tests binnen het script.
+
+switch (new Date().getDay()) {    (goed)                        switch (new Date().getDay()) {    (fout)
+  case 0:                                                                             case 0:
+    day = "Monday";                                                                day = "Monday";
+    break;                                                                              case 1:
+  case 1:                                                                                day = "Tuesday";
+    day = "Tuesday";                                                             }
+    break;
+}
+
+4. konijn
+
+5. konijn
+
+6. niks, dit komt omday case "monday" geen console.log heeft
+
+7.  konijn, koe en vos
+
+8. koe en vos
+
+9. vos
+
+10. konijn
+
+11. vos
+
+12. konijn
+
+13. Overal waar JavaScript een statement verwacht, kun je ook een 
+expressie schrijven. Zo'n statement wordt een expression statement 
+genoemd. Het omgekeerde geldt niet: je kunt geen statement schrijven 
+waar JavaScript een expressie verwacht. Een if-statement kan bijvoorbeeld 
+niet het argument van een functie worden.
+
+14. is de enige JavaScript-operator die drie operanden nodig heeft: een voorwaarde gevolgd 
+door een vraagteken ( ? ), vervolgens een uitdrukking die moet worden uitgevoerd als de 
+voorwaarde waarheidsgetrouw is, gevolgd door een dubbele punt ( : ), en ten slotte 
+de uitdrukking om uitvoeren als de voorwaarde onwaar is.
+
+var age = 26;
+var beverage = (age >= 21) ? "Beer" : "Juice";
+console.log(beverage);
+
+console: Beer
