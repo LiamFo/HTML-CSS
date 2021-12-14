@@ -1,0 +1,122 @@
+1. strict mode is a way to opt in to a restricted variant of JavaScript
+
+2. plaats "use strict" aan de top van je script
+
+3. het verandered stille errors naar echte errors, 
+bijvoorbeeld in normale modus, als je een variable verkeerd schrijft dan maakt het een nieuwe variable.
+
+4. een function is een block code gemaakt om bepaalde taken uit te voeren, bijvoorbeeld:
+
+function myFunction(4, 5) {
+  return 4 * 5;
+}
+de function returns het antwoord van 4*5
+
+5. variabelen zijn items die verschillende waarden kunnen aannemen. 
+Een functie probeert de ene variabele uit te leggen in termen van een andere.
+
+6. een function body is het een stuk code dat verteld wat de funcition doet
+
+function myFunction(4, 5) {    }--function
+  return 4 * 5;     }--function body
+}
+
+7. 
+a6
+b1
+c2
+d3
+e5
+
+8. niks
+
+9. Cheese
+
+10. Cheese
+     Cheese
+
+11. je krijgt 3 knuffels van mij
+
+12. je krijgt 12 knuffels van mij
+
+13. je krijgt 1 knuffel van mij
+
+14. je krijgt 12 knuffels van mij
+
+15. je krijgt 12 knuffels van mij
+     extra knuffels!
+
+16.
+
+17. niks
+
+18. 4
+
+19. 4
+     4
+
+20. 8
+
+21. 20
+
+22. wanneer je de function roept via functionname(); en/of console.log();
+
+23. undefined
+
+24. function declaration maakt een function met een naam, function expression haalt de naam weg en maakt het anoniem.
+
+declaration:   function Test() {};
+expression:   const Test = function() {}
+
+25. parameters zijn de namen, arguments zijn de waarde
+var example = function( a, b, c ) {};      a, b, en c zijn de parameters
+
+example( 1, 2, 3 );                                 1, 2, en 3 zijn de arguments
+
+26. een manier om functions korter te maken
+
+van: 
+hello = function() {
+  return "Hello World!";
+}
+
+naar:
+hello = () => "Hello World!";
+
+27. het heet een arrow function omdat er een arrow (=>) wordt gebruikt
+
+28. function decleration kan je oproepen terwijl je arrow functions niet kan oproepen
+
+29. 5
+
+30. 8
+
+31. 34
+
+32. Henk works at a Teacher and Henk is very Happy
+
+33. Frits works at a Developer and Frits is very Happy
+
+34. Henk works at a Teacher and Henk is very undefined
+
+35. de Dont Repeat Yourself (DRY) principle waarbij je voorkomt om hetzelfe stuk code over en over te typen
+      door minder functies te gebruiken:
+
+var orangeCost = function(cost) {
+    var price = 10 ; 
+    var total = price *5;
+    
+    console.log(total) }
+orangeCost()
+
+naar
+
+var orangeCost= function(price) {
+console.log(price * 5);
+};
+
+orangeCost(5);
+
+36. de return keyword stopt een functie en roept het huidige vaarde op.
+
+37. x en y hebben geen waarde en console.log(); moet buiten de functie
