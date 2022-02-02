@@ -1,0 +1,38 @@
+<DOCTYPE html>
+    <html>
+    <head>
+        <style>
+            .grid-container_item{
+                border: 2px solid black;
+                width:50px;
+                height:50px;
+                cursor: pointer;
+            }
+        </style>
+    <body>
+        <div class="grid-container">
+            <div class="grid-container_item grid-container_item-a">A</div>
+            <div class="grid-container_item grid-container_item-b">B</div>
+            <div class="grid-container_item grid-container_item-c">C</div>
+          </div>
+    
+          <script>
+          var test = document.getElementsByClassName("grid-container_item")
+          var testEen = test[0].addEventListener("click", display1);
+          var testTwee = test[1].addEventListener("click", display2);
+          var testDrie = test[2].addEventListener("click", display3);
+
+          function display1(){
+              console.log(test[0].innerHTML);
+          }
+
+          function display2(){
+              console.log(test[1].innerHTML);
+          }
+
+          function display3(){
+              console.log(test[2].innerHTML);
+          }
+      </script>
+    </body>
+    </head> 

@@ -1,0 +1,40 @@
+<DOCTYPE html>
+    <html>
+    <head>
+        <style>
+            .button{
+                width:100px;
+                height:100px;
+                background-color: lightpink;
+                font-size: 35px;
+                cursor: pointer;
+            }
+        </style>
+    <body>
+        <div class="grid-container">
+            <div id="lion" class="button">Click</div>
+            <img id="lion2" src="https://www.starremediesshop.nl/wp-content/uploads/2016/02/Tiger.jpg" width="100px;" height="100px;">
+          </div>
+    
+          <script>
+var randomimage = ['https://files.worldwildlife.org/wwfcmsprod/images/Tiger_resting_Bandhavgarh_National_Park_India/hero_small/6aofsvaglm_Medium_WW226365.jpg', 
+            'https://media.gettyimages.com/photos/full-length-of-tiger-against-white-background-picture-id931286370?s=612x612', 
+            'https://static.dw.com/image/57847022_401.jpg',
+            'https://cdn.mos.cms.futurecdn.net/E4HKzWfxRuwsNSdtsRbseU-1200-80.jpg',
+            'https://i.natgeofe.com/n/6490d605-b11a-4919-963e-f1e6f3c0d4b6/sumatran-tiger-thumbnail-nationalgeographic_1456276.jpg',
+            'https://media.npr.org/assets/img/2021/12/30/2021-12-30t045850z_792570186_rc2w3m9makdd_rtrmadp_3_florida-zoo-tiger-attack-2_custom-d0cb32a76f8e8e94c01451d1cb6659fd36021858.jpg',
+            'https://cdn.britannica.com/40/75640-050-F894DD85/tiger-Siberian.jpg',
+            'https://static01.nyt.com/images/2021/12/29/multimedia/29xp-Tiger-Naples-zoo/29xp-Tiger-Naples-zoo-videoSixteenByNineJumbo1600.jpg',
+            'https://s.hdnux.com/photos/01/20/00/75/20975484/3/rawImage.jpg',
+            'https://images.photowall.com/products/48997/eye-of-the-tiger.jpg?h=699&q=85'];
+
+                      var test = document.getElementById('lion');
+          lion.onclick = function() {
+              var i;
+              for(i = 0;i < Math.floor(Math.random() * 9);i++);
+        document.getElementById("lion2").src = randomimage[i];
+        console.log(i);
+          }
+      </script>
+    </body>
+    </head> 
