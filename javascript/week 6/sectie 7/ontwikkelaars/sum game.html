@@ -1,0 +1,179 @@
+<html>
+    <head>
+        <style>
+            .grid-container {
+                min-height: 80vh;
+                display: grid;
+                grid-template-columns:50px 50px 50px 50px 50px;
+                grid-template-rows:50px 50px 50px 50px 50px 50px 50px 50px 50px;
+                text-align:center;
+            }
+
+            .grid-item{
+                font-size:25px;
+                font-family:'Segoe UI';
+            }
+
+            .game{
+                cursor: pointer;
+            }
+            .a {
+                grid-column: 1 / 4;
+                grid-row: 3 / 6;
+                background-color: purple;
+            }
+
+            .b {
+                grid-column: 4 / 5;
+                grid-row: 3 / 4;
+                background-color: pink;
+            }
+
+            .c {
+                grid-column: 5 / 6;
+                grid-row: 3 / 6;
+                background-color: lightgreen;
+            }
+
+            .d {
+                grid-column: 4 / 5;
+                grid-row: 4 / 6;
+                background-color:orangered;
+            }
+
+            .e {
+                grid-column: 1 / 2;
+                grid-row: 6 / 7;
+                background-color:darkcyan;
+            }
+
+            .f {
+                grid-column: 2 / 5;
+                grid-row: 6 / 7;
+                background-color:plum;
+            }
+
+            .g {
+                grid-column: 5 / 6;
+                grid-row: 6 / 8;
+                background-color:lightsalmon;
+            }
+
+            .h {
+                grid-column: 1 / 5;
+                grid-row: 7/ 8;
+                background-color:lime;
+            }
+
+            .display{
+                grid-column: 1 / 6;
+                grid-row: 1 / 2;
+                background-color: lightskyblue;
+            }
+
+            .hud{
+                grid-column: 1 / 6;
+                grid-row: 9 / 10;
+                background-color: lightskyblue;
+            }
+
+            .button{
+                background-color: white;
+                border: 2px solid black;
+                border-radius: 5px;
+                font-size:12px;
+                width:80px;
+                height:35px;
+                cursor: pointer;
+                margin-top:360px;
+            }
+
+            .button:hover{
+                background-color: rgb(216, 216, 216);
+            }
+            .grow{
+                transition: all .3s ease-in-out;
+                transform: scale(1.1);
+            }
+            .shrink{
+                transition: all .3s ease-in-out;
+                transform: scale(1);
+            }
+
+        </style>
+    </head>
+    <body class="grid-container">
+        <div id="A" onclick = "add('A')" class="grid-item game a"></div>
+        <div id="B" onclick = "add('B')" class="grid-item game b"></div>
+        <div id="C" onclick = "add('C')" class="grid-item game c"></div>
+        <div id="D" onclick = "add('D')" class="grid-item game d"></div>
+        <div id="E" onclick = "add('E')" class="grid-item game e"></div>
+        <div id="F" onclick = "add('F')" class="grid-item game f"></div>
+        <div id="G" onclick = "add('G')" class="grid-item game g"></div>
+        <div id="H" onclick = "add('H')" class="grid-item game h"></div>
+        <div id="goal" class="grid-item display"></div>
+        <div class="grid-item hud"></div>
+        <button onclick="done();" class="grid-item button" style="margin-left:25px;">Done</button>
+        <button onclick="generate();" class="grid-item button" style="margin-left:95px;">Cant be done</button>
+
+        <div id="score" style="width:100px;margin-left:-30px;">Current Score: </div>
+        <div style="width:500px;margin-top:450px;margin-left:-250px;">Press "Can't be done" to regenerate a new puzzle</div>
+    </body>
+    <script>
+        var score = 0;
+        var Goal = 0;
+
+        function generate(){
+            var varA = Math.floor(Math.random() * 11);
+            document.getElementById('A').innerHTML = varA;
+
+            var varB = Math.floor(Math.random() * 11);
+            document.getElementById('B').innerHTML = varB;
+
+            var varC = Math.floor(Math.random() * 11);
+            document.getElementById('C').innerHTML = varC;
+
+            var varD = Math.floor(Math.random() * 11);
+            document.getElementById('D').innerHTML = varD;
+
+            var varE = Math.floor(Math.random() * 11);
+            document.getElementById('E').innerHTML = varE;
+
+            var varF = Math.floor(Math.random() * 11);
+            document.getElementById('F').innerHTML = varF;
+
+            var varG = Math.floor(Math.random() * 11);
+            document.getElementById('G').innerHTML = varG;
+
+            var varH = Math.floor(Math.random() * 11);
+            document.getElementById('H').innerHTML = varH;
+
+            Goal = Math.floor(Math.random() * 31);
+            document.getElementById('goal').innerHTML = Goal;
+
+            document.getElementById('score').innerHTML = "Current score: " + 0;
+            score = 0;
+
+        }
+        function add(A){
+              var testA = parseInt(document.getElementById(A).innerHTML, 10);
+            score += testA;
+            document.getElementById('score').innerHTML = "Current score: " + score;
+            console.log(score);
+            parseInt(document.getElementById(A).innerHTML = "-");
+        }
+
+        function goodanswer(){
+            document.getElementById('goal').classList.add("grow");
+        }
+
+        function done(){
+            if(Goal == score){
+                console.log("good");
+                goodanswer()
+            }else{
+                console.log("wrong");
+            }
+        }
+    </script>
+</html>
