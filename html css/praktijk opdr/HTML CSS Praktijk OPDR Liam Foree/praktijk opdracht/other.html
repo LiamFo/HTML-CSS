@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+    <html>
+    <head>
+        <link rel="stylesheet" href="practijkstyle.css">
+        <link rel="stylesheet" href="practijkresponsive.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        </head>
+    <body>
+      <span class="menu_button navigation" style="position: fixed;z-index:1" onclick="openNav()">&#9776; Menu</span>
+      <h1 class="block"></h1>
+      <div id="Menu" class="menuside">
+        <a class="menuclose" onclick="closeNav()">&times;</a>
+        <a href="index.html">History of Trains</a>
+        <a href="galery.html">Galery</a>
+        <a href="other.html">Facts</a>
+      </div>
+      
+          <img id="top_img" src="https://uitinarnhem.nl/wp-content/uploads/2021/10/DinnerTrain_1.jpg"
+          alt="train" class="img">
+          <br>
+          <br>
+          <br>
+          <a class="texttitle" style="margin-left:45%;">Facts</a>
+
+          <div class="grid-container textbg grid-move">
+              <div class="a1 textblock grow">America's first steam locomotive lost a race to a horse. </div>
+              <div class="a2 textblock grow">The longest train ride you can take is 17 000 kilometers long, it goes from Portugal to Vietnam.</div>
+              <div class="a3 textblock grow">Many "Ghost Trains" run on the British Rail Network. These trains, often unadvertised, run extremely rarely, 
+                  at obscure times, through bizarre routes, purely to keep the line officially open whilst discouraging passenger use.</div>
+                  <div class="a4 textblock grow">In 1869, Chinese and Irish laborers working on the Central Pacific Railway managed to lay down 10 miles of tracks in just one day. This accomplishment has not been matched even in modern times.</div>
+                  <div class="a5 textblock grow">Most train horns are based on musical chords. Common passenger trains found in the U.S. are usually based on major 6th chords, which are not as threatening as most freight trains, which are based on more dissonant, frightening , such as diminished 7th chords.</div>
+                  <div class="a6 textblock grow">There is a device known as a derailer. It is used to intentionally derail trains that enter into unauthorized areas.</div>
+                  <div class="a7 textblock grow">There is a Train station in Sweden that uses (living) people's body heat to warm adjacent buildings</div>
+                  <div class="a8 textblock grow">The London Underground has its own implementation of the KERS (Kinetic Energy Recovery System), where the platforms are actually uphill from the surrounding track, so that the Kinetic Energy is turned into Gravitational Potential Energy, and recovered when the train leaves the station.</div>
+                  <div class="a9 textblock grow">In 1896 Auburn ROTC cadets greased the skids of a railway track before a football game. The train with the incoming team couldn''t stop and slid halfway to the next town, forcing them to walk 5 miles to the game possibly contributing to their 45-0 loss.</div>
+                  <div class="a10 textblock grow">In 1963, four Princeton students forced a local train to stop by parking a car on the tracks. With a gun loaded with blanks, they got on the train, picked four girls as their dates, and rode away with them on horseback.</div>
+          </div>
+
+        <div class="footer footer_move3">
+            <span class="dot"></span>
+            <p class="footer2">Website gemaakt door: Liam Foree</p>
+            <a class="footer2" href = "https://en.wikipedia.org/wiki/Train" style="text-decoration: none;color:black">Bron: <u style="color:lightblue">Wikipedia</u></a>
+            <a class="button" onclick="document.getElementById('top_img').scrollIntoView();">Back to top</a>
+        </div>
+    
+    </body>
+    <script>
+      function openNav() {
+        document.getElementById("Menu").style.width = "250px";
+      }
+      
+      function closeNav() {
+        document.getElementById("Menu").style.width = "0";
+      }
+      </script>
+    </head>

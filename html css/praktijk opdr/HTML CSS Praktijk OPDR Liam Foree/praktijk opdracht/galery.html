@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+    <html>
+    <head>
+        <link rel="stylesheet" href="practijkstyle.css">
+        <link rel="stylesheet" href="practijkresponsive.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        </head>
+    <body>
+      <span class="menu_button navigation" style="position: fixed;z-index:1" onclick="openNav()">&#9776; Menu</span>
+      <h1 class="block"></h1>
+      <div id="Menu" class="menuside">
+        <a class="menuclose" onclick="closeNav()">&times;</a>
+        <a href="index.html">History of Trains</a>
+        <a href="galery.html">Galery</a>
+        <a href="other.html">Facts</a>
+      </div>
+      
+          <img id="top_img" src="https://thesamikhsya.com/wp-content/uploads/2020/01/indian-railway.jpg"
+          alt="train" class="img">
+          <br>
+          <br>
+          <br>
+          <a class="texttitle" style="margin-left:45%;">Galery</a>
+
+          <div class="textbg galery">
+              <img class="textblock image1 grow" src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Three-loco-styles.jpg/390px-Three-loco-styles.jpg" alt="train">
+              <div class="textblock info1 grow">Pacific National diesel locomotives in Australia showing three body types, cab unit (Front), hood unit (Center) and box cab (Back)</div>
+              <img class="textblock image1 grow" src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/R707-loco-victorian-railways.jpg/390px-R707-loco-victorian-railways.jpg">
+              <div class="textblock info1 grow">An R class steam locomotive number R707 as operated by the Victorian Railways of Australia</div>
+              <img class="textblock image1 grow" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Wainwright_Class_P_Kidderminster.jpg/330px-Wainwright_Class_P_Kidderminster.jpg">
+              <div class="textblock info1 grow">Wainwright SECR Class P on the Bluebell Railway, England</div>
+              <img class="textblock image1 grow" src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Locomotion_No._1..jpg/330px-Locomotion_No._1..jpg">
+              <div class="textblock info1 grow">The Locomotion No. 1 at Darlington Railway Centre and Museum</div>
+          </div>
+    
+
+    
+        <div class="footer footer_move2" >
+            <span class="dot"></span>
+            <p class="footer2">Website gemaakt door: Liam Foree</p>
+            <a class="footer2" href = "https://en.wikipedia.org/wiki/Train" style="text-decoration: none;color:black">Bron: <u style="color:lightblue">Wikipedia</u></a>
+            <a class="button" onclick="document.getElementById('top_img').scrollIntoView();">Back to top</a>
+        </div>
+    
+    </body>
+    <script>
+      function openNav() {
+        document.getElementById("Menu").style.width = "250px";
+      }
+      
+      function closeNav() {
+        document.getElementById("Menu").style.width = "0";
+      }
+      </script>
+    </head>

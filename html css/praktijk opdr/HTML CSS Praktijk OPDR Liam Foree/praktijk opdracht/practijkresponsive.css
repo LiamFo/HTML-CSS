@@ -1,0 +1,164 @@
+@media only screen and (max-width: 768px) {
+  body {
+    min-width: fit-content;
+    overflow-x:hidden;
+    min-width: 165%;
+    font-size:15px;
+  }
+
+  .text1{
+      height:250px;
+      width:600px;
+      margin-left:290px;
+  }
+  
+  .text2{
+    height:345px;
+    width:600px;
+    margin-left:155px;
+  }
+
+  .text3{
+    height:232px;
+    width:600px;
+    margin-left:290px;
+    margin-top:65px;
+  }
+  .img1{
+    margin-left:803px;
+    margin-top:-304px;
+  }
+
+  .trainimg{
+      position: relative;
+  }
+
+  .img{
+      width:1300px;
+      height:300px;
+  }
+
+  .texttitle{
+      margin-left:32%;
+  }
+  .block{
+      width:70%;
+  }
+  .navigation{
+      width:1270px;
+  }
+  .footer{
+      width:1265px;
+  }
+  .galery{
+    margin-left:24%;
+}
+.grid-move{
+    margin-left:180px;
+    margin-top:50px;
+  }
+}
+
+ @media only screen and (max-width: 320px){
+    body {
+        min-width: fit-content;
+        overflow-x:hidden;
+        margin: 0;
+        padding: 0;
+    }
+    .galery{
+        margin-left:205px;
+        width:775px
+    }
+
+    .grid-move{
+        margin-left:180px;
+        margin-top:50px;
+      }
+
+      .footer_move1{
+          margin-top:1150px;
+      }
+
+      .footer_move2{
+        margin-top:1000px;
+    }
+
+    .footer_move3{
+        margin-top:1600px;
+    }
+
+    .fonttext{
+      font-size:30px;
+    }
+
+    .text1{
+      height: 250px;
+      width: 980px;
+      margin-left: 110px;
+  }
+  
+  .text2{
+    height: 320px;
+    width: 980px;
+    margin-left: 108px;
+    margin-top: 300px;
+  }
+
+  .text3{
+    height: 232px;
+    width: 979px;
+    margin-left: 109px;
+    margin-top: 407px;
+  }
+  .img1{
+    margin-left: 109px;
+    margin-top: 632px;
+    width: 300px;
+    font-size: 30px;
+    height: 342px;
+  }
+  .fonttext2{
+    font-family: Verdana;
+    font-size: 30px;
+    width: 600px;
+    margin-left: 155px;
+  }
+
+  .trainimg{
+    width: 964px;
+    height: 501px;
+    flex-direction: column;
+  }
+
+  .info1{
+    font-size:30px;
+  }
+  .image1{
+    width: 439px;
+    height: 364px;
+    margin-top: 10px;
+  }
+
+  .texttitle{
+    margin-left: 480px;
+  }
+
+  .grid-move {
+    margin-left: 70px;
+    margin-top: 50px;
+  }
+
+  .img{
+    width: 1101px;
+    height: 300px;
+  }
+
+  .navigation {
+    width: 1073px;
+  }
+
+  .footer{
+    width: 1068px;
+  }
+  }

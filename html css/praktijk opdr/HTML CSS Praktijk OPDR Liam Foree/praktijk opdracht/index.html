@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="practijkstyle.css">
+    <link rel="stylesheet" href="practijkresponsive.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+<body>
+  <span class="menu_button navigation" style="position: fixed;z-index:1" onclick="openNav()">&#9776; Menu</span>
+  <h1 class="block"></h1>
+  <div id="Menu" class="menuside">
+    <a class="menuclose" onclick="closeNav()">&times;</a>
+    <a href="index.html">History of Trains</a>
+    <a href="galery.html">Galery</a>
+    <a href="other.html">Facts</a>
+  </div>
+  
+      <img id="top_img" src="https://media-cdn.tripadvisor.com/media/photo-s/10/db/97/a3/the-flam-railway-offers.jpg"
+      alt="train" class="img">
+      <br>
+      <br>
+      <br>
+      <a class="texttitle">History of Trains</a>
+
+      <div id="text1" class="textbg grow text1" >
+        <div class="textblock fonttext">In rail transport, a train is a series of connected vehicles that run along a railway track and transport people or freight.
+          <br>The word train comes from the Old French trahiner, derived from the Latin trahere meaning "to pull, to draw".
+          <br>Trains are typically pulled or pushed by locomotives (often known simply as "engines")
+          <br>though some are self-propelled, such as multiple units.
+          
+          <br><br>Passengers and cargo are carried in railroad cars, also known as wagons.
+          <br>Trains are designed to a certain gauge, or distance between rails. Most trains operate on steel tracks
+          <br>with steel wheels, the low friction of which makes them more efficient than other forms of transport.</div>
+</div>
+
+<div id="text2" class="textbg grow text2">
+        <div class="textblock fonttext">Trains have their roots in wagonways, which used railway tracks and were powered by
+          <br>horses or pulled by cables. Following the invention of the steam locomotive in
+          <br>the United Kingdom in 1804, trains rapidly spread around the world, allowing
+          <br>freight and passengers to move over land faster and cheaper than ever possible before.
+
+          <br><br>Rapid transit and trams were first built in the late 1800s to transport large numbers of
+          <br>people in and around cities. Beginning in the 1920s, and accelerating following
+          <br>World War II, diesel and electric locomotives replaced steam as the means of
+          <br>motive power. Following the development of cars, trucks,
+          <br>and extensive networks of highways which offered greater mobility,
+          <br>as well as faster airplanes, trains declined in importance and market share,
+          <br>and many rail lines were abandoned. The spread of buses led to
+          <br>the closure of many rapid transit and tram systems during this time as well.</div>
+        </div>
+
+        <div class="textbg grow img1">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Stockton_%26_Darlington_Railway_%28Brown_via_Getty_Images%29.jpg/330px-Stockton_%26_Darlington_Railway_%28Brown_via_Getty_Images%29.jpg"
+          class="textblock trainimg">
+          <div class="textblock fonttext2" style="margin-top:15px;">Stockton and Darlington
+            <br>special inaugural train 1825:
+            <br>six wagons of coal, directors coach,
+            <br>then people in wagons.</div>
+        </div>
+
+        <div id="text3" class="textbg grow text3">
+          <div class="textblock fonttext">Since the 1970s, governments, environmentalists, and train advocates have promoted increased use of trains due to
+            <br>their greater fuel efficiency and lower greenhouse gas emissions compared to other modes of land transport.
+            <br>High-speed rail, first built in the 1960s, has proven competitive with cars and planes over short to medium distances.
+            <br>Commuter rail has grown in importance since the 1970s as an alternative to congested highways and a means to
+            <br>promote development, as has light rail in the 21st century. Freight trains remain important for the transport of
+            <br>bulk commodities such as coal and grain, as well as being a means of reducing road traffic congestion by freight trucks.</div>
+          </div>
+
+          <div class="footer footer_move1">
+            <span class="dot"></span>
+            <p class="footer2">Website gemaakt door: Liam Foree</p>
+            <a class="footer2" href = "https://en.wikipedia.org/wiki/Train" style="text-decoration: none;color:black">Bron: <u style="color:lightblue">Wikipedia</u></a>
+            <a class="button" onclick="document.getElementById('top_img').scrollIntoView();">Back to top</a>
+          </div>
+
+</body>
+<script>
+  function openNav() {
+    document.getElementById("Menu").style.width = "250px";
+  }
+  
+  function closeNav() {
+    document.getElementById("Menu").style.width = "0";
+  }
+  </script>
+</head>
